@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : ex7.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+
+{
+	int x=20,y=5;
+	//code swipping x,y
+x=x+y; //x=25
+y=x-y; //y=20
+x=x-y;  //x=5
+printf("after swapping : x= %d , y= %d",x,y);
+}
