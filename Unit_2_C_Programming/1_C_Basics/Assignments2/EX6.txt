@@ -1,0 +1,25 @@
+
+ ============================================================================
+ Name         EX6.c
+ Author       abdelrahman sayed
+ Version     
+ Copyright    Your copyright notice
+ Description  Hello World in C, Ansi-style
+ ============================================================================
+ 
+
+#include stdio.h
+#include stdlib.h
+
+int main(void)
+{
+ int a,i,sum;
+printf(Enter an integer );
+fflush(stdout);fflush(stdin);
+scanf(%d,&a);
+for (i=1,sum=0 ; i=a ; i++ )
+{
+	sum+=i;
+}
+printf(sum=%d,sum);
+}

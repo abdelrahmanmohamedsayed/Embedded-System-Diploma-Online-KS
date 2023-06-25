@@ -1,0 +1,29 @@
+/*
+ ============================================================================
+ Name        : EX5.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+char a;
+printf("Enter a character :");
+fflush(stdout);fflush(stdin);
+scanf("%c",&a);
+if ((a>='a' && a<='z')||(a>='A' && a<='Z'))
+{
+	printf("%c is alphabet",a);
+}
+else
+{
+	printf("%c is not alphabet",a);
+
+}
+}
