@@ -1,0 +1,59 @@
+/*
+ ============================================================================
+ Name        : Calculate and Print the Transpose of 3x3 Matrix.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	float matrix[3][3];
+	float transpose[3][3];
+	int i,a;
+	for(i=0;i<3;i++)
+	{
+		for(a=0;a<3;a++)
+		{
+			printf("enter the item( %d,%d) : ",i,a);
+			fflush(stdout);fflush(stdin);
+			scanf("%f",&matrix[i][a]);
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(a=0;a<3;a++)
+		{
+			printf("%f\t",matrix[i][a]);
+		}
+		printf("\n");
+
+
+	}
+	printf("tanspose matrix\n");
+
+	for(i=0;i<3;i++)
+	{
+		for(a=0;a<3;a++)
+		{
+			transpose[i][a]=matrix[a][i];
+
+		}
+	}
+
+
+
+	for(i=0;i<3;i++)
+	{
+		for(a=0;a<3;a++)
+		{
+			printf("%f\t",transpose[i][a]);
+		}
+		printf("\n");
+	}
+}

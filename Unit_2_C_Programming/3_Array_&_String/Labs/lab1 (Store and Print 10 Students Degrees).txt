@@ -1,0 +1,29 @@
+/*
+ ============================================================================
+ Name        : Store and Print 10 Students Degrees.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float degree[10];
+	int i;
+	for(i=0 ; i<10 ;i++)
+	{
+		printf("enter student %d degree: ",i+1);
+		fflush(stdout);fflush(stdin);
+		scanf("%f",&degree[i]);
+
+	}
+	for(i=0 ; i<10 ;i++)
+		{
+			printf("enter student %d degree: %f",i+1,degree[i]);
+		}
+	return 0;
+}

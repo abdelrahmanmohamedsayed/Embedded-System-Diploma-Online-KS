@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : Comparing Two Strings.c
+ Author      : andelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include<string.h>
+
+int main(void)
+{
+char name[3][15]={"abdelrahman","osama","sayed"};
+char a[10];
+int i;
+printf("enter your first name");
+fflush(stdout);fflush(stdin);
+scanf("%s",a);
+for(i=0;i<3;i++)
+{
+	if(stricmp(a,name[i])==0)
+	{
+		printf("congratulation your name is listed");
+		break;
+	}
+
+}
+if(i==3)
+{
+printf("sorry  your name is not  listed");
+
+}
+}
