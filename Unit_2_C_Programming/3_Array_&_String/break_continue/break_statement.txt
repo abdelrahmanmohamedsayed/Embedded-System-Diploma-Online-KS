@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        :break statement.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+float num, sum=0;
+int n,i;
+printf("maximum  no. of  input ");
+fflush(stdin);fflush(stdout);
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+
+		printf("enter n%d : ",i);
+		fflush(stdin);fflush(stdout);
+		scanf("%f",&num);
+if(num<0)
+	break;
+sum+=num;
+
+}
+printf("average = %0.2f",sum/(i-1));
+}
