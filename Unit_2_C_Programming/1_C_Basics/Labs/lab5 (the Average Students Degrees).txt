@@ -1,0 +1,27 @@
+ ============================================================================
+ Name        : lab5.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+	int n,i;
+	float sum,degree;
+	printf("enter numbers of student");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&n);
+	for(i=1 , sum=0 ;i<=n;i++)
+	{
+		printf("%d :  student  degree\n",i);
+		fflush(stdout); fflush(stdin);
+		scanf("%f",&degree);
+		sum +=degree;
+
+	}
+	printf("the Average Students Degrees is %f",sum/n);
+
+}

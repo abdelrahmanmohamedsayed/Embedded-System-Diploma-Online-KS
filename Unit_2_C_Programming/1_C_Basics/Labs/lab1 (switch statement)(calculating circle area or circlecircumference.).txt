@@ -1,0 +1,50 @@
+/*
+ ============================================================================
+ Name        : lab1.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char option;
+	int r ;
+	float area , circumference;
+	printf("eneter radius");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&r);
+	printf("to calculate area enter a and to calculate circumference enter c");
+	fflush(stdout);fflush(stdin);
+	scanf("%c",&option);
+	switch (option)
+	{
+	case 'a':
+	case 'A':
+	{
+		area=3.14*r*r;
+		printf("area equal %f",area);
+
+	}
+	break;
+	case 'c':
+	case 'C':
+	{
+		circumference=3.14*r*2;
+		printf("circumferece %f",circumference);
+
+	}
+	break;
+
+	default:
+	{
+		printf("wrong option");
+	}
+	break;
+
+}
+}
