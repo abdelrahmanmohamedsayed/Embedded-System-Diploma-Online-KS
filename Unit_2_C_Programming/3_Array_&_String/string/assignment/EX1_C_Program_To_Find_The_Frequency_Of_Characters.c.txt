@@ -1,0 +1,42 @@
+/*
+ ============================================================================
+ Name        : EX1.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+	char f[1], str[100];
+	int a, i,sum=0;
+
+	//enter string by user//
+	printf("enter string : ");
+	fflush(stdin);	fflush(stdout);
+	gets(str);
+	//enter character by user//
+
+	printf("enter character to find frequency : ");
+	fflush(stdin);	fflush(stdout);
+	scanf("%c",f);
+	a=strlen(str);
+	for(i=0;i<a;i++)
+	{
+		if(f[0]==str[i])
+		{
+
+			sum++;
+		}
+	}
+
+
+	printf("frequency of %c =%d",f[0],sum);
+
+
+
+}

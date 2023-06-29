@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : EX2.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+	char str[100];
+	int i;
+	printf("enter a string : ");
+	fflush(stdin);fflush(stdout);
+	gets(str);
+	for(i=0;str[i]!=0;i++);
+
+
+	printf("length of string : %d ",i);
+
+}
