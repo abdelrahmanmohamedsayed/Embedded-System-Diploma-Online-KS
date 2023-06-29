@@ -1,0 +1,55 @@
+/*
+ ============================================================================
+ Name        : EX5.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	int arr[50];
+	int num,i,element;
+	//enter number of elements//
+	printf("enter number of elements");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&num);
+	//enter  elements//
+
+	for(i=0;i<num;i++)
+	{
+		scanf("%d", &arr[i]);
+
+	}
+	//enter searched element//
+	printf("enter element to be searched");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&element);
+	// finding location//
+	for(i=0;i<num;i++)
+	{
+		if(arr[i]==element)
+
+		{
+			printf("element found at location=%d",i+1);
+		}
+
+
+	}
+	if(i<num)
+	{
+		printf("sucessful operstion");
+
+	}
+	else if(i>num)
+	{
+		printf("number not found");
+
+	}
+
+}

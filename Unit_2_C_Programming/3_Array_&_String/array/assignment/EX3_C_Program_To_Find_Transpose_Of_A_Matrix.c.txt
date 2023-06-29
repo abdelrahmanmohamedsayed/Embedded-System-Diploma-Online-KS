@@ -1,0 +1,79 @@
+/*
+ ============================================================================
+ Name        : EX3.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float m1[7][7];
+	float m2[7][7];
+	int i,a,r,c;
+	printf("enter row and coloum of matrix : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d %d",&r,&c);
+	printf("enter element of matrix\n ");
+
+	//stroring element of matrix by user//
+	for(i=0;i<r;i++)
+	{
+		for(a=0;a<c;a++)
+		{
+			printf("enter elements m1(%d,%d)  ",i+1,a+1);
+			fflush(stdin);fflush(stdout);
+			scanf("%f",&m1[i][a]);
+
+
+		}
+
+	}
+	printf("element of matrix \n");
+	//displaying element of matrix //
+
+	for(i=0;i<r;i++)
+	{
+		for(a=0;a<c;a++)
+		{
+			printf("%f\t",m1[i][a]);
+
+
+
+		}
+		printf("\n");
+
+	}
+	//finding transpose of matrix and store it
+	for(i=0;i<r;i++)
+	{
+		for(a=0;a<c;a++)
+		{
+			m2[a][i]=m1[i][a];
+
+
+		}
+	}
+
+	printf("transpose of matraix \n");
+	//display transpoe of matrix//
+
+	for(i=0;i<c;i++)
+	{
+		for(a=0;a<r;a++)
+		{
+			printf("%f\t",m2[i][a]);
+
+
+
+		}
+		printf("\n");
+
+
+	}
+
+}

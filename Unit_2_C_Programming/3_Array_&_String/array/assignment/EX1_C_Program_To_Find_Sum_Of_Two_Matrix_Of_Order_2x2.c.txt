@@ -1,0 +1,67 @@
+/*
+ ============================================================================
+ Name        : EX1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float m1[2][2];
+	float m2[2][2];
+	float sum[2][2];
+	int r,c;
+	printf("first matrix elements\n");
+for(r=0;r<2;r++)
+{
+	for(c=0;c<2;c++)
+
+	{
+		printf("m1(%d,%d) : ",r,c);
+		fflush(stdout);fflush(stdin);
+		scanf("%f",&m1[r][c]);
+
+	}
+}
+printf("second matrix elements\n" );
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+
+{
+	printf("m2(%d,%d) : ",r,c);
+	fflush(stdout);fflush(stdin);
+	scanf("%f",&m2[r][c]);
+
+}
+
+}
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+
+{
+sum[r][c]=m1[r][c]+m2[r][c];
+
+}
+printf("sum matrix elements\n" );
+
+}
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+
+{
+printf("%f\t",sum[r][c]);
+
+}
+
+printf("\n");
+
+}
+}

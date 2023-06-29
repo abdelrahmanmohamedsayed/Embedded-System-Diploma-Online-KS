@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : EX2.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	float m1[100];
+	float sum;
+
+ int i,n;
+ printf("Enter number of date:");
+ fflush(stdout);fflush(stdin);
+ scanf("%d",&n);
+ if(n>100 ||n<=0)
+ {
+	 printf("eror number should be in range of (1 to 100)\n");
+	 printf("Enter again:");
+	  fflush(stdout);fflush(stdin);
+	  scanf("%d",&n);
+ }
+ for(i=0;i<n;i++)
+ {
+	 printf("%d.enter number : ",i+1);
+	 fflush(stdout);fflush(stdin);
+	 scanf("%f",&m1[i]);
+	 sum+=m1[i];
+ }
+ printf("average =%f ",sum/n);
+
+}
