@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : matrix.c
+ Author      :abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	int i,a;
+	for(a=0;a<=9;a++)
+	{
+		for(i=a;i<=9;i++)
+		{
+
+			printf("%d\t",i);
+		}
+		printf("\n");
+
+	}
+
+
+}
+
+

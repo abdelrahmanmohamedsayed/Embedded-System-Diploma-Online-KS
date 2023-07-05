@@ -1,0 +1,44 @@
+/*
+ ============================================================================
+ Name        : Calculate the Factorial.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>/*
+ ============================================================================
+ Name        : ii.c
+ Author      :
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int factorial(int a)
+{
+	int i;
+	int f=1;
+	for(i=a;i>0;i--)
+	{
+		f*=i;
+	}
+	return f;
+}
+
+int main(void)
+{
+	printf("factorial(%d)= %d\n",10,factorial(10));
+	printf("factorial(%d)= %d\n",0,factorial(0));
+	printf("factorial(%d)= %d\n",5,factorial(5));
+return 0;
+
+}
+
+
