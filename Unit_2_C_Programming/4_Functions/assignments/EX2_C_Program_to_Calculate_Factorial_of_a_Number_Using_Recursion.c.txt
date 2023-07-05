@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : ex2.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int factorial (int num);
+int main(void)
+{
+	int num;
+printf("Enter positive integer");
+fflush(stdin);fflush(stdout);
+scanf("%d",&num);
+printf("factorial number of %d =%d",num,factorial(num));
+return 0;
+}
+
+int factorial (int num)
+{
+     static int f=1;
+		f*=num;
+		if(num!=1)
+		{
+				num--;
+factorial(num);
+}
+		return 	f;
+}
