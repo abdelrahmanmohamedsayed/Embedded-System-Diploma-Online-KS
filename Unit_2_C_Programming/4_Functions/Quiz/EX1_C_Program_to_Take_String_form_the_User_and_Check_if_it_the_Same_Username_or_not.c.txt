@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : ex1.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char str1[100];
+	char str2[100];
+	int result;
+printf("Enter a string");
+fflush(stdin);fflush(stdout);
+gets(str1);
+printf("Enter your name");
+fflush(stdin);fflush(stdout);
+gets(str2);
+result =stricmp(str2,str1);
+if(result==0)
+	printf("identical");
+else
+	printf("not identical");
+
+}

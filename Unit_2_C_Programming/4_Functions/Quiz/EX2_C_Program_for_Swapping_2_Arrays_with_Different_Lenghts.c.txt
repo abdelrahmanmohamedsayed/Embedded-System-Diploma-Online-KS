@@ -1,0 +1,42 @@
+/*
+ ============================================================================
+ Name        : ex2.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int  arr1[10];
+	int arr2[10];
+	int arr3[10];
+	int i;
+printf("First array");
+fflush(stdin);fflush(stdout);
+for(i=0;i<10;i++)
+	scanf("%d",&arr1[i]);
+printf("Second array");
+fflush(stdin);fflush(stdout);
+for(i=0;i<5;i++)
+	scanf("%d",&arr2[i]);
+printf("after swapping");
+fflush(stdout);
+for(i=0;i<10;i++)
+{
+	arr3[i]=arr1[i];
+	arr1[i]=arr2[i];
+	arr2[i]=arr3[i];
+}
+	printf("\nFirst array\t");
+	for(i=0;i<5;i++)
+		printf("\t%d",arr1[i]);
+	printf("\nSecond array\t");
+	for(i=0;i<10;i++)
+		printf("\t%d",arr2[i]);
+return 0;
+}

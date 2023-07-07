@@ -1,0 +1,42 @@
+/*
+ ============================================================================
+ Name        : ex8.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int last_occurance(int arr[],int n,int num)
+{
+	int i;
+
+	for(i=n-1;i>=0;i--)
+	{
+		if(arr[i]==num)
+          return i+1;
+	}
+return-1;
+}
+int main(void) {
+	int num,n,i,arr[100];
+	printf("enter no of elements ");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+	printf("enter %d elements : ",i+1);
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&arr[i]);
+
+	}
+	printf("enter number that you want to know its ocuurance ");
+	fflush(stdout);fflush(stdin);
+		scanf("%d",&num);
+		int last=last_occurance(arr,n,num);
+	printf("last ocurance is %d",last);
+
+}

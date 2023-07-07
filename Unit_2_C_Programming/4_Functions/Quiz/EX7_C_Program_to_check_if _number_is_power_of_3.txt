@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : ex7.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+	int  n;
+	printf("enter  number : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	if((n%3)==0)
+		printf("yes,number is power of 3");
+	else
+		printf("no,number is not power of 3");
+		return 0;
+
+}

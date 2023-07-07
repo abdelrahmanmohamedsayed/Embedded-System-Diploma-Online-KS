@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : ex5.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int clear(int n,int bit)
+{
+	return n&=~(1<<bit);
+}
+int main(void) {
+	int  n,bit;
+printf("enter number : ");
+fflush(stdin);fflush(stdout);
+scanf("%d",&n);
+printf("enter bit position: ");
+fflush(stdin);fflush(stdout);
+scanf("%d",&bit);
+printf(" result =  %d",clear(n,bit));
+
+return 0;
+}

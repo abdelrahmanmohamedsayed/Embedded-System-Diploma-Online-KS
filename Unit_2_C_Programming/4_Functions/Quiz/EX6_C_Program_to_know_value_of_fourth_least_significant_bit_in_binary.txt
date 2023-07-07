@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : ex6.c
+ Author      : abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int clear(int n,int bit)
+{
+	return n&=~(1<<bit);
+}
+int main(void) {
+	int  n,i,k;
+	printf("enter integer  in decimal number : : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	printf("\nbinary decimal number \t: : ");
+
+	for(i=31;i>=0;i--)
+	{
+		k=n>>i;
+		if(k&1)
+			printf("1");
+		else
+			printf("0");
+	}
+		k=n>>3;
+		if(k&1)
+					printf("\n4least significant bit is 1");
+				else
+					printf("\n4least significant bit is 0");
+		return 0;
+
+}
