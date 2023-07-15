@@ -1,0 +1,41 @@
+/*
+ ============================================================================
+ Name        : EX1.c
+ Author      :abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void sum_digit(int num);
+int main(void)
+{
+int num;
+printf("enter  number: ");
+fflush(stdin);fflush(stdout);
+scanf("%d",&num);
+
+sum_digit(num);
+}
+void sum_digit(int num)
+{
+int a,sum=0,remainder;
+a=num;
+while (a!=0)
+{
+	remainder=a%10;
+	sum+=remainder;
+	a=a/10;
+
+}
+printf("sum of digits =%d",sum);
+
+}
+
+
+
+

@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : ex4.c
+ Author      :abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+void reverse_digit(int a);
+int main(void)
+{
+int a;
+printf(" Enter  number: ");
+fflush(stdin);fflush(stdout);
+scanf("%d",&a);
+reverse_digit(a);
+}
+void reverse_digit(int a)
+{
+	int remainder,reverse=0;
+	while (a!=0)
+	{
+		remainder=a%10;
+		reverse=reverse*10+remainder;
+		a=a/10;
+	}
+	printf("reverse = %d",reverse);
+
+
+}
+

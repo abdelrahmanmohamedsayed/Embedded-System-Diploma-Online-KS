@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : ex2.c
+ Author      :abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+void root_square(float num);
+int main(void)
+{
+float num;
+printf("enter  number: ");
+fflush(stdin);fflush(stdout);
+scanf("%f",&num);
+root_square(num);
+}
+void root_square(float num)
+{
+	double r;
+	r=sqrt(num);
+	printf("square root of %f = %lf",num,r);
+
+}
+

@@ -1,0 +1,55 @@
+/*
+ ============================================================================
+ Name        : ex9.c
+ Author      :abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void reverse_words(char str[],int size);
+int main(void)
+{
+	int size,str[20];
+	printf(" Enter  string ");
+	fflush(stdin);fflush(stdout);
+	gets(str);
+	size=strlen(str);
+	reverse_words(str,size);
+}
+void reverse_words(char str[],int size)
+{
+	char rev[20];
+	int i, k=0,j;
+	for(i=size-1;i>=0;i--)
+	{
+		if(str[i]==' ')
+		{
+			for(j=k-1;j>=0;j--)
+			{
+				printf("%c",rev[j]);
+			}
+			printf(" ");
+			k=0;
+		}
+
+		else
+		{
+			rev[k]=str[i];
+			k++;
+		}
+	}
+	if(k!=0)
+	{
+		for(j=k-1;j>=0;j--)
+		{
+			printf("%c",rev[j]);
+		}
+	}
+
+
+}

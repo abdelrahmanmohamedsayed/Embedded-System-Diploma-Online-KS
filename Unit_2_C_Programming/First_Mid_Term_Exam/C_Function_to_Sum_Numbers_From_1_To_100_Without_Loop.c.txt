@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : ex7.c
+ Author      :abdelrahman sayed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int summ(int a,int b);
+
+int main(void)
+
+{
+	int a,b;
+	printf(" Enter two numbers ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d %d",&a,&b);
+	printf("sum between %d and %d = %d",a,b,summ( a, b));
+}
+int summ(int a,int b)
+{
+	static int sum=0;
+sum+=a;
+	a++;
+	if(a!=b)
+	{
+		 summ (a,b);
+	}
+	else
+	sum+=b;
+
+ return sum;
+}
+
